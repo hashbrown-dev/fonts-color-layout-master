@@ -1,0 +1,228 @@
+/* 
+author: Harsh Gandhi;
+filename: times.css;
+Date: 22 october, 2018;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Acme|K2D|Text+Me+One');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    /*font-family: font stack required for body text */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    /*font-family: font stack required for headings */
+    padding: 0.5rem;
+}
+
+header > h1 {
+    /*.masthead > h1{*/
+    display: flex;
+    align-items: center;
+    font-family: 'K2D', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    color: hsla(0, 0%, 0%, 1);
+    text-shadow: 4px 4px 3px hsla(210, 50%, 20%, .4);
+    /*    letter-spacing: 5px;*/
+    /*    color: hsla(207, 100%, 28%, 1);*/
+    /*    color: hsla(37, 96%, 31%, 1);*/
+    /*    color: hsla(23, 78%, 58%, 0.97);*/
+}
+
+p {}
+
+@media only screen and (max-width: 1500px) {
+    .container {}
+}
+
+.subnav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: hsla(210, 50%, 20%, 1);
+}
+
+.subnav a {
+    margin: 7px;
+    font-family: 'K2D', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    justify-content: space-around;
+    color: hsla(360, 100%, 100%, 1);
+}
+
+.subnav a:hover {
+    font-size: 110%;
+    color: hsla(188, 100%, 63%, 1);
+}
+
+.mainnav {
+    display: flex;
+    justify-content: space-around;
+    background-color: hsla(210, 50%, 20%, 1);
+    padding: 0.5rem;
+}
+
+.mainnav a {
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    justify-content: space-around;
+    color: hsla(360, 100%, 100%, 1);
+}
+
+.mainnav a:hover {
+    font-size: 140%;
+    color: hsla(188, 100%, 63%, 1);
+}
+
+.masthead {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: beige;
+    padding: 3rem;
+}
+
+.times-logo {
+    display: flex;
+    box-shadow: 7px 7px 5px grey;
+}
+
+.masthead h1 {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.content {}
+
+.content .story {
+    padding: 2rem;
+}
+
+.story h1 {
+    background-color: lightgray;
+    border: 1px solid hsla(210, 50%, 20%, 1);
+    /*    padding: 0.5rem;*/
+    /*    box-shadow: 0 2px 5px hsla(338, 62%, 62%, 0.95);*/
+    /*    color: white;*/
+    /*    text-shadow: 1px 1px 2px black, 0 0 15px blue, 0 0 2px darkblue;*/
+    /*    text-shadow: -2px -2px 1px hsla(0, 0%, 20%, 1);*/
+}
+
+.story.lead-story h1 {
+    background-color: lightgray;
+    /*    padding: 0.5rem;*/
+    /*    border: 3px solid hsla(37, 96%, 31%, 1);*/
+    /*    border: 3px double hsla(210, 50%, 20%, 1);*/
+}
+
+.story.lead-story {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap padding: 2rem;
+    margin: 2rem;
+    border: 5px solid hsla(0, 0%, 0%, 1);
+    font-family: 'Text Me One', sans-serif;
+    font-size: 20px;
+}
+
+h1.story-title {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Acme', sans-serif;
+    justify-content: center;
+    color: hsla(37, 96%, 31%, 1);
+    text-decoration-line: underline;
+    /*    letter-spacing: 5px;*/
+}
+
+article.story {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.story-img {
+    float: left;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 450px;
+    clear: both;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+p.story-img {
+    /*    float: left;
+    flex-wrap: wrap;
+    max-width: 100%; 
+   max-height: 450px;
+*/
+}
+
+.story p {
+    overflow: auto;
+    display: block;
+    margin: 1rem;
+    flex-direction: row;
+}
+
+.story blockquote {
+    quotes: "\201E""\201D";
+    text-align: center;
+}
+
+.story blockquote::before {
+    content: open-quote;
+}
+
+.story blockquote::after {
+    content: close-quote;
+}
+
+.story p.byline {
+    display: flex;
+    justify-content: center;
+    font-family: 'Text Me One:700', sans-serif;
+    font-size: 20px;
+    /*    margin-bottom: 2rem;*/
+}
+
+p.byline span.author {
+    margin: 1rem;
+}
+
+p.byline span.pub {
+    margin: 1rem;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    background-color: hsla(210, 50%, 20%, 1);
+}
+
+.foot p {
+    padding: 10px;
+    font-family: 'K2D', sans-serif;
+    font-size: 17px;
+    color: hsla(360, 100%, 100%, 1);
+    /*    margin: 10px;*/
+}
